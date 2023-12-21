@@ -23,20 +23,11 @@ df = user_input_features() #this will rule out all the fx called abve
 st.subheader('User Input parameters')
 st.write(df)
 
-data = sns.load_dataset('Sales')
-X = data.drop(['Sales'],axis=1)
-Y = data.Sales.copy()
+loaded_model=pickle.load(open(("Sales_Model", "rb"))
+pred=loaded_model.predict(df)
 
-modelGaussianSales = GaussianNB()
-modelGaussianSales.fit(X, Y)
-
-prediction = modelGaussianSales.predict(df)
-prediction_proba = modelGaussianSales.predict_proba(df)
-
-st.subheader('Class labels and their corresponding index number')
-st.write(Y.unique())
-
-st.subheader('Prediction')
+st.subheader('Sales Prediction')
+st.write(pred)
 st.write(prediction)
 
 st.subheader('Prediction Probability')
