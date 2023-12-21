@@ -23,7 +23,7 @@ df = user_input_features() #this will rule out all the fx called abve
 st.subheader('User Input parameters')
 st.write(df)
 
-loaded_model=pickle.load(open(("Sales_Model.h5", "rb"))
+loaded_model=pickle.load(open("Sales_Model.h5", "rb"))
 pred = loaded_model.predict(df)
 
 st.subheader('Sales Prediction')
