@@ -1,7 +1,7 @@
+import pickle
 import streamlit as st
 import pandas as pd
 import seaborn as sns
-from sklearn.naive_bayes import GaussianNB
 
 st.write("#Simple Sales Prediction App")
 st.write("This app predicts the **Sales** value!")
