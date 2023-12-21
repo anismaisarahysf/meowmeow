@@ -24,11 +24,8 @@ st.subheader('User Input parameters')
 st.write(df)
 
 loaded_model=pickle.load(open(("Sales_Model", "rb"))
-pred=loaded_model.predict(df)
+pred = loaded_model.predict(df)
 
 st.subheader('Sales Prediction')
 st.write(pred)
 st.write(prediction)
-
-st.subheader('Prediction Probability')
-st.write(pred)
