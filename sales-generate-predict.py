@@ -9,9 +9,9 @@ st.write("This app predicts the **Sales** value!")
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    TV = st.sidebar.slider('TV', 4.3, 7.9, 5.4) #st.slider to generate slider
-    Radio = st.sidebar.slider('Radio', 2.0, 4.4, 3.4)
-    Newspaper = st.sidebar.slider('Newspaper', 1.0, 6.9, 1.3)
+    TV = st.sidebar.slider('TV', 0.00, 300.00, 75.00) #st.slider to generate slider
+    Radio = st.sidebar.slider('Radio', 0.00, 9.90, 5.00)
+    Newspaper = st.sidebar.slider('Newspaper', 0.00, 25.00, 5.00)
     data = {'TV': TV,
             'Radio': Radio,
             'Newspaper': Newspaper}
