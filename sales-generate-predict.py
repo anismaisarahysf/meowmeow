@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 
-st.write("#Simple Sales Prediction App")
+st.write("Sara made a Simple Sales Prediction App! Ehe")
 st.write("This app predicts the **Sales** value!")
 
 st.sidebar.header('User Input Parameters')
